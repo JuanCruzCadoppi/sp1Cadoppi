@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             lblUser = new Label();
             lblPassword = new Label();
             lblModulo = new Label();
@@ -129,6 +130,7 @@
             Controls.Add(lblModulo);
             Controls.Add(lblPassword);
             Controls.Add(lblUser);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "frmLogin";

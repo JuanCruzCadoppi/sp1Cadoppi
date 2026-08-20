@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             lblBienvenida = new Label();
             btnAceptar = new Button();
             SuspendLayout();
@@ -35,6 +36,7 @@
             // lblBienvenida
             // 
             lblBienvenida.AutoSize = true;
+            lblBienvenida.BackColor = SystemColors.ButtonFace;
             lblBienvenida.Font = new Font("Bahnschrift", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblBienvenida.Location = new Point(39, 40);
             lblBienvenida.Name = "lblBienvenida";
@@ -59,6 +61,9 @@
             ClientSize = new Size(407, 188);
             Controls.Add(btnAceptar);
             Controls.Add(lblBienvenida);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "frmInicio";
             ResumeLayout(false);
             PerformLayout();
